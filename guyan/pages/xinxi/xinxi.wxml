@@ -1,0 +1,8 @@
+<!--pages/xinxi/xinxi.wxml-->
+<view class="shouquanxinxi">
+  <image src="{{img[0]}}"/>
+  <view class="gengduo">更多内容，请登录后查看</view>
+  <view class="button1">
+    <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" size="mini">微信授权登录</button>
+  </view>
+</view>

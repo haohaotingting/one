@@ -1,0 +1,47 @@
+<navBar title='我的' background='#000000' color='#fff' back="{{true}}" ></navBar>
+
+<view class="zuiwai">
+  <view class="biejingse" style="background-image: url('{{img[0]}}');">
+    <view class="touxiang" wx:if="{{touxiang!=null}}">
+      <image src="{{touxiang}}" class="tupian" />
+      <view class="mignzi">{{xinming}}</view>
+    </view>
+
+    <view class="touxiang1" wx:else>
+      <view class="tupian">
+        <text class="shouquan" bindtap="denglu">授权/登录</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="fenlei">
+    <view class="dingdan" bindtap="dingdan1" hover-class="bianhuan1">
+      <view class="tubiao1">
+        <text class="iconfont icon-icon-order"></text>
+      </view>
+      <view class="ding1">我的订单</view>
+      <view class="iconfont icon-jiantou jiantou1"></view>
+    </view>
+
+
+    <view class="dingdan1" bindtap="dingdan2" hover-class="bianhuan1">
+      <view class="tubiao2">
+        <text class="iconfont icon-ziyuan"></text>
+      </view>
+      <view class="ding2">个人资料</view>
+      <view class="iconfont icon-jiantou jiantou1"></view>
+    </view>
+
+
+    <view class="dingdan2" bindtap="dingdan3" hover-class="bianhuan1">
+      <view class="tubiao3">
+        <text class="iconfont icon-lianxifangshi"></text>
+      </view>
+      <view class="ding3">联系我们</view>
+      <view class="iconfont icon-jiantou jiantou1"></view>
+    </view>
+
+
+    <!-- <button open-type="contact" bindcontact="handleContact" class="zixuan" hover-class="button22">客服咨询</button> -->
+  </view>
+</view>

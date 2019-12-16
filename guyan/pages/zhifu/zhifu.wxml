@@ -1,0 +1,120 @@
+<!--pages/zhifu/zhifu.wxml-->
+<!-- 成人船票 -->
+<view class="qiehuan1">
+  <view class="cheng">成人+船票</view>
+    <view class="piao">
+      <text class="iconfont icon-iconfontgantanhao2"></text>
+      <text class="bu">不可退票</text>
+      <text class="iconfont icon-dui"></text>
+      <text class="ti">提前1天优惠五元</text>
+    </view>
+    <view class="an">
+      <view class="ren">
+        <text class="iconfont icon-renminbi1688 hh"></text>
+        <text class="wu">{{hh<day?45:50}}</text>
+        <text class="xie">/人</text>
+        <text class="iconfont icon-renminbi1688 kk"></text>
+        <text class="ling">50</text>
+      </view>
+    </view>
+</view>
+
+
+<!-- 出游日期 -->
+<view>
+  <view class="riqi">
+    <view class="you">游玩日期</view>
+    <view class="ri">
+      <picker mode="date" start="{{hh}}" end="{{kk}}" bindchange="bindDate">
+        <view class="picker">
+          {{day}}
+        </view>
+      </picker>
+    </view>
+    <view class="iconfont icon-jiantou"></view>
+  </view>
+</view>
+
+<!-- 门票数量 -->
+<view class="menpiao">
+  <view class="shuliang">门票数量</view>
+  <view class="ting">
+    <view class='stepper'>
+      <text class='jian' bindtap='bindMinus'>-</text>
+      <input class="zhi" type="number" bindinput='bindManual' bindblur="bindManual1"	 value='{{num}}'></input>
+      <text class="jia" bindtap='bindPlus'>+</text>
+    </view>
+  </view>
+</view>
+
+
+<!-- 预订人信息 -->
+<view class="yudingren">
+  <view class="yuding">
+    
+    <view class="heng">预订人信息</view>
+  </view>
+
+  <view class="xingxi">
+    <view class="lianxiren">
+      <view class="lianxi">联系人</view>
+      <input placeholder="请输入真实姓名" type="text" bindblur="lianxiwo" />
+    </view>
+    <view class="hr"></view>
+    <view class="shouji">
+      <view class="haoma">手机号码</view>
+      <input type="number" placeholder="此号码为接收订单通知使用" bindblur="shouji"  ></input>
+    </view>
+  </view>
+</view>
+
+
+
+<!-- 预订须知 -->
+<view class="yudingxuzhi">
+  <view class="xuzhi">
+    <view class="yuzhi">预订须知</view>
+  </view>
+  <view class="zhongdianzhuyi">
+    <view class="zhuyi">
+        <view class="jiancha">检查点:</view>
+        <view class="dagangtou">大港头区域:渡南路接待中心检查口、村委检票口、医院检票口、上街口检票口。</view>
+        <view class="yantou">堰头区域:保定检票口、文昌阁检票口、四君子检票口、牌坊检票口。</view>
+        <view class="matou">码头:</view>
+        <view class="xiangzhang">香樟码头、通坪码头、保定码头(坐满开航或者等待10至15分钟开航。)</view>
+        <view class="shiyong">使用须知:</view>
+        <view class="wuxu">无需取票，凭本网站我的订单已完成订单查看购买记录一致就可直接入园。</view>
+        <view class="goumai">购买须知:</view>
+        <view class="piaoshui">票随买随用，门票有效时间为购买时选择的使用时间。</view>
+        <view class="youxiao">有效期:</view>
+        <view class="xuanze">选择的使用日期当天有效。</view>
+        <view class="tuigai">退改规则:</view>
+        <view class="buzhici">不支持退改，下单请安排好时间谢谢！</view>
+        <view class="youdai">优待政策:</view>
+        <view class="weishiyong">未使用可随时申请退款。不支持部分退。如需改期，请申请取消后重新预订。</view>
+        <view class="ertong">儿童:6周岁(含)以下或身高1.2米(含)以下[免费]; 1.2米(不含)-1.5米(不含)[半价]。</view>
+        <view class="laoren">老人:70岁(含)以上持老年证、身份证[免费]; 60岁(含)——69岁(含)之间持老年证[优惠票]。</view>
+        <view class="jizhe">记者:凭有效证件[免费]。</view>
+        <view class="canjiren">残疾人:凭有效证件[免费]。</view>
+        <view class="lixi">离休干部:凭有效证件[免费]。</view>
+        <view class="quanri">全日制大学生、现役军人、教师:凭有效证件[半价]。</view>
+        <view class="yishang">以上信息仅供参考，具体请以景区当天披露为准。</view>
+        <view class="bencangping">*本产品仅限成人预订，优惠票请自行前往古堰画乡景区售票处购买。</view>
+      </view>
+  </view>
+</view>
+
+
+<!-- 支付金额 -->
+<view class="zhifujine">
+  <view class="zhifujin">
+    <view class="qian">
+      <text class="heji">合计</text>
+      <text class="iconfont icon-renminbi1688 youqianren"></text>
+      <text class="wushiyuan">{{duoshaoqian1}}</text>
+    </view>
+    <!-- <view class="buttomtijiao"> -->
+      <button size="mini" bindtap="dingdan" >提交订单</button>
+    <!-- </view> -->
+  </view>
+</view>

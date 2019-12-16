@@ -1,0 +1,36 @@
+<!--pages/ziliao/ziliao.wxml-->
+  <navBar title='个人资料' background='#000000' color='#fff' back="{{true}}" iconTheme='white' bindback="handlerGobackClick"></navBar>
+  
+<view class="gerenziliao">
+  <view class="tupiao">
+    <image src="{{img[0]}}" />
+  </view>
+  
+  <view class="ziliao">
+    <view class="geren">个人资料</view>
+    <view class="touxiang1">
+      <view class="tou">头像</view>
+      <view class="xiang">
+        <image src="{{touxiang}}" />
+      </view>
+    </view>
+
+    <view class="nicheng">
+      <view class="ni">昵称</view>
+      <view class="cheng">{{xinming}}</view>
+    </view>
+
+    
+      <form bindsubmit="shoujihaoma">
+        <view class="shouji">
+          <view class="shou">手机号码</view>
+          <!-- 只有设置了 name 属性的表单元素才能在提交表单时传递它们的值。 -->
+          <input  class="input1"  name='username' value="{{haoma}}">{{haoma}}</input>
+        </view>
+          <!-- <input placeholder="献上你宝贵的评价" class="input1" bindblur="pingjia" value="{{shuru}}"></input> -->
+          <button formType="submit" class="button1">确认修改</button>
+          <!-- <view >提交</view> -->
+      </form>
+    
+  </view>
+</view>

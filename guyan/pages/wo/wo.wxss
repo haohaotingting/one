@@ -1,0 +1,121 @@
+/* css的@import导入外部样式表 */
+@import "../../css/iconfont.wxss";   
+page{
+  background:rgba(236, 233, 233, 0.5);
+}
+.biejingse{
+  height:170px;
+  padding-top:20px;
+}
+.touxiang{
+  /* display:flex;
+  justify-content: center;
+  align-items:center; */
+  border-radius:50%;
+  height:78px;
+  border:2px #fff solid;
+  /* background:red; */
+  width:22%;
+  margin:0 auto;
+}
+.touxiang1{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  border-radius:50%;
+  height:78px;
+  border:2px #fff solid;
+  /* background:red; */
+  width:22%;
+  margin:0 auto;
+}
+.shouquan{
+  font-size:14px;
+  color:#fff;
+}
+image{
+  height:100%;
+  width:100%;
+  border-radius:50%;
+}
+.mignzi{
+  text-align:center;
+  color:#fff;
+  padding-top:3px;
+}
+
+
+
+/* 分类1 */
+.dingdan{
+  display:flex;
+  height:40px;
+  background:#fff;
+  margin-bottom:1px;
+}
+.tubiao1,.tubiao2,.tubiao3{
+  line-height:40px;
+  flex:3;
+  /* background:lavender; */
+  text-align:right;
+  padding-right:10px;
+}
+.icon-icon-order{
+  color:#fff;
+  background:rgb(16, 178, 241);
+  padding:5px;
+  border-radius:50%;
+}
+.ding1,.ding2,.ding3{
+  line-height:40px;
+  flex:20;
+  /* background:gold; */
+}
+.jiantou1{
+  font-size:24px;
+  line-height:40px;
+  flex:1;
+  /* background:hotpink; */
+  text-align:center;
+}
+.bianhuan1{
+  background:rgba(209, 207, 207, 0.5);
+}
+
+
+/* 分类2 */
+.dingdan1{
+  display:flex;
+  height:40px;
+  background:#fff;
+  margin-bottom:10px;
+}
+.icon-ziyuan{
+  color:#fff;
+  background:rgb(240, 194, 43);
+  padding:5px;
+  border-radius:50%;
+}
+
+
+/* 分类3 */
+.dingdan2{
+  display:flex;
+  height:40px;
+  background:#fff;
+  margin-bottom:20px;
+}
+.icon-lianxifangshi{
+  color:#fff;
+  background:rgb(35, 241, 16);
+  padding:5px;
+  border-radius:50%;
+}
+
+
+.zixuan{
+  background:firebrick;
+}
+.button22{
+  background:rgb(245, 41, 41);
+}

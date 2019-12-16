@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/wo/wo",
+    "pages/ziliao/ziliao",
+    
+    "pages/gengduo/gengduo",
+    "pages/nongjiale2/nongjiale2",
+    "pages/sou/sou",
+    "pages/zhifu/zhifu",
+    "pages/xinxi/xinxi"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+    "color": "#C0C0C0",
+    "selectedColor": "#CD853F",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/首页.png",
+        "selectedIconPath": "img/首页 (1).png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "住宿",
+        "iconPath": "img/住宿.png",
+        "selectedIconPath": "img/住宿 (1).png"
+      },
+      {
+        "pagePath": "pages/wo/wo",
+        "text": "我的",
+        "iconPath": "img/我 的.png",
+        "selectedIconPath": "img/我 的 (1).png"
+      }
+    ]
+  }
+  
+}

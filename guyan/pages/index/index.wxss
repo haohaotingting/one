@@ -1,0 +1,265 @@
+/**index.wxss**/
+@import "../../css/iconfont.wxss";
+
+/* 搜索框 */
+.image1{
+  width:100%;
+  height:65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image2{
+  background:#fff;
+  width:90%;
+  height:35px;
+  border-radius:30px;
+  border:1px #DEB887 solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.image2 input{
+  flex:1.5;
+  font-size:15px;
+}
+.image2 .hh{
+  flex:0.2;
+  font-size:16px;
+  /* background:red; */
+  text-align:center;
+  color:#DEB887;
+}
+.image2 .ss{
+  flex:0.2;
+  font-size:20px;
+  color:#DEB887;
+}
+
+
+/* 轮播图 */
+.sw{
+  width:100%;
+  height:200px;
+}
+.sw swiper-item image{
+  width:100%;
+  height:100%;
+}
+
+
+/* 地图 */
+.biao{
+  height:35px;
+  /* background:red; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-dibiao{
+  flex:0.3;
+  text-align:right;
+  font-size:18px;
+  padding-right:5px;
+}
+.zhe{
+  flex:3;
+  font-size:16px;
+}
+.icon-jiantou{
+  flex:0.3;
+  font-size:24px;
+  color:#C0C0C0;
+}
+
+
+/* 新闻文章 */
+.xinwen{
+  background:rgba(236, 233, 233, 0.5);
+}
+.zuixin{
+  padding-top:20px;
+  display:flex;
+}
+.h1{
+  font-size:24px;
+  font-weight:600;
+  flex:1;
+  /* background:red; */
+  padding-left:10px;
+}
+
+.cha{
+  flex:1;
+  /* background:green; */
+  text-align:right;
+  font-size:14px;
+  color:rgb(138, 136, 136);
+  padding-right:10px;
+}
+.xin .mei{
+  padding-top:20px;
+  padding-left:10px;
+  font-size:14px;
+}
+.xin .gu{
+  padding-left:10px;
+  font-size:14px;
+}
+.xin .icon-shijian{
+  padding-left:10px;
+  font-size:14px;
+  color:rgb(138, 136, 136);
+}
+.xin .shi{
+  font-size:12px;
+  color:rgb(138, 136, 136);
+  padding-top:20px;
+}
+.xin .hr{
+  width:95%;
+  margin:0 auto;
+  border-top:0.1rpx rgb(233, 226, 226) solid;
+  margin-top:5px;
+  margin-bottom:8px;
+}
+.wen{
+  padding-bottom:15px;
+}
+.wen .me{
+  padding-left:10px;
+  font-size:14px;
+}
+.wen .gu1{
+  padding-left:10px;
+  font-size:14px;
+}
+.wen .icon-shijian{
+  padding-left:10px;
+  font-size:14px;
+  color:rgb(138, 136, 136);
+}
+.wen .jian{
+  font-size:12px;
+  color:rgb(138, 136, 136);
+  padding-top:20px;
+}
+.wen .hr1{
+  width:95%;
+  margin:0 auto;
+  border-top:1rpx rgb(233, 226, 226) solid;
+  margin-top:5px;
+}
+
+
+/* 点击切换 */
+.biaoti{
+  width:100%;
+  height:50px;
+  display: flex;
+  align-items: center;
+}
+.top-line-button1{
+  flex:1;
+  text-align:center;
+  color:rgb(209, 123, 9);
+}
+.top-line-button2{
+  flex:1;
+  text-align:center;
+  color:rgb(209, 123, 9);
+}
+.active {                        
+  border-bottom:1px solid rgba(209, 123, 9,0.8);
+  padding-bottom:12px;
+}
+.cheng{
+  padding:20px 0px 0px 12px;
+  font-weight:700;
+  font-size:16px;
+}
+.piao{
+  padding:3px 0px 0px 15px;
+}
+.bu,.ti{
+  padding-left:2px;
+  font-size:12px;
+}
+.icon-iconfontgantanhao2,.icon-dui{
+  font-size:12px;
+  padding-left:8px;
+  /* background:red; */
+  color:rgb(209, 123, 9);
+}
+.an{
+  display: flex;
+  padding:10px 0px;
+}
+.ren{
+  flex:1;
+  /* background:red; */
+  padding-left:15px;
+}
+.button{
+  font-size:18px;
+  flex:1;
+  /* background:red; */
+  text-align:right;
+  padding-right:15px;
+}
+.button1{
+  color:#fff;
+}
+.hh{
+  font-size:12px;
+  color:red;
+  font-weight:700;
+}
+.wu{
+  font-size:18px;
+  color:red;
+}
+.xie{
+  font-size:14px;
+  color:red;
+}
+.kk{
+  font-size:12px;
+  text-decoration:line-through;
+  color:#808080;
+}
+.ling{
+  font-size:14px;
+  text-decoration:line-through;
+  color:#808080;
+}
+
+
+/* 预订须知 */
+.zhuyi{
+  width:95%;
+  text-align:justify;
+  margin:0 auto;
+  padding-top:15px;
+}
+.jiancha,.matou,.shiyong,.goumai,.youxiao,.youdai{
+  font-size:16px;
+  font-weight:700;
+}
+.tuigai{
+  font-size:16px;
+  font-weight:700;
+  color:red;
+}
+.buzhici{
+  color:red;
+  padding-bottom:5px;
+}
+.dagangtou,.yantou,.xiangzhang,.wuxu,.piaoshui,.xuanze,.weishiyong,.ertong,.laoren,.jizhe,.canjiren,.lixi,.quanri,.yishang{
+  padding-bottom:5px;
+}
+.bencangping{
+  color:red;
+  padding-bottom:25px;
+}

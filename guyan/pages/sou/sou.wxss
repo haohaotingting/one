@@ -1,0 +1,36 @@
+/* pages/sou/sou.wxss */
+@import "../../css/iconfont.wxss";
+.image1{
+  width:100%;
+  height:65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image2{
+  background:#fff;
+  width:90%;
+  height:35px;
+  border-radius:30px;
+  border:1px #DEB887 solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.image2 input{
+  flex:1.5;
+  font-size:15px;
+}
+.image2 .hh{
+  flex:0.2;
+  font-size:16px;
+  /* background:red; */
+  text-align:center;
+  color:#DEB887;
+}
+.image2 .ss{
+  flex:0.2;
+  font-size:20px;
+  color:#DEB887;
+}

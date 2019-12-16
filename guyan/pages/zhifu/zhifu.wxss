@@ -1,0 +1,277 @@
+/* pages/zhifu/zhifu.wxss */
+@import "../../css/iconfont.wxss";
+page{
+  background:rgba(236, 233, 233, 0.5);
+}
+
+
+/* 成人船票 */
+.qiehuan1{
+  background:#fff;
+  margin:5px 0px 10px 0px;
+}
+.cheng{
+  padding:20px 0px 0px 12px;
+  font-weight:700;
+  font-size:16px;
+}
+.piao{
+  padding:3px 0px 0px 15px;
+}
+.bu,.ti{
+  padding-left:2px;
+  font-size:12px;
+}
+.icon-iconfontgantanhao2,.icon-dui{
+  font-size:12px;
+  padding-left:8px;
+  /* background:red; */
+  color:rgb(209, 123, 9);
+}
+.an{
+  display: flex;
+  padding:10px 0px;
+}
+.ren{
+  flex:1;
+  /* background:red; */
+  padding-left:15px;
+}
+.hh{
+  font-size:12px;
+  color:red;
+  font-weight:700;
+}
+.wu{
+  font-size:18px;
+  color:red;
+}
+.xie{
+  font-size:14px;
+  color:red;
+}
+.kk{
+  font-size:12px;
+  text-decoration:line-through;
+  color:#808080;
+}
+.ling{
+  font-size:14px;
+  text-decoration:line-through;
+  color:#808080;
+}
+
+
+/* 出游日期 */
+.riqi{
+  height:40px;
+  display:flex;
+  margin-bottom:1px;
+  background:#fff;
+}
+.you{
+  line-height:40px;
+  flex:1;
+  padding-left:15px;
+}
+.ri{
+  line-height:40px;
+  flex:1;
+  text-align:right;
+}
+.icon-jiantou{
+  font-size:24px;
+  color:#808080;
+  line-height:40px;
+  /* background:green; */
+}
+
+
+/* 门票数量 */
+.menpiao{
+  height:40px;
+  display:flex;
+  align-items: center;
+  background:#fff;
+}
+.shuliang{
+  flex:1;
+  padding-left:15px;
+}
+.ting {
+  flex:1;
+  display:flex;
+  justify-content: flex-end;
+  padding-right:10px;
+}
+.stepper {
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  width:50%;
+  height:30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  
+}
+.jian{
+  flex:1;
+  text-align:center;
+}
+.zhi{
+  flex:2;
+  text-align:center;
+}
+.jia{
+  flex:1;
+  text-align:center;
+}
+
+
+/* 预订人信息 */
+.yuding{
+  height:40px;
+  display:flex;
+  align-items: center;
+  padding-left:15px;
+  /* background:#ccc; */
+  
+}
+.heng{
+  height:60%;
+  border-left:5px solid red;
+  padding-left:5px;
+}
+.xingxi{
+  background:#fff;
+  font-size:14px;
+}
+.lianxiren{
+  height:40px;
+  display:flex;
+  align-items: center;
+  
+}
+.lianxi{
+  padding-left:15px;
+  flex:1;
+  /* background:green; */
+}
+.lianxiren input{
+   /* background:red; */
+   flex:3;
+   text-align:right;
+   padding-right:10px;
+}
+.xingxi .hr{
+  border-top:1px solid rgba(236, 233, 233, 0.5);
+}
+.shouji{
+  height:40px;
+  display:flex;
+  align-items: center;
+}
+.haoma{
+  padding-left:15px;
+  flex:1;
+  /* background:green; */
+}
+.shouji input{
+   /* background:red; */
+   flex:3;
+   text-align:right;
+   padding-right:10px;
+}
+
+
+/* 预订须知 */
+.xuzhi{
+  height:40px;
+  display:flex;
+  align-items: center;
+  padding-left:15px;
+  /* background:#ccc; */
+  
+}
+.yuzhi{
+  height:60%;
+  border-left:5px solid red;
+  padding-left:5px;
+}
+
+
+.zhongdianzhuyi{
+  background:#fff;
+  margin-bottom:75px;
+}
+.zhuyi{
+  width:95%;
+  text-align:justify;
+  margin:0 auto;
+  padding-top:10px;
+  
+}
+.jiancha,.matou,.shiyong,.goumai,.youxiao,.youdai{
+  font-size:16px;
+  font-weight:700;
+}
+.tuigai{
+  font-size:16px;
+  font-weight:700;
+  color:red;
+}
+.buzhici{
+  color:red;
+  padding-bottom:5px;
+}
+.dagangtou,.yantou,.xiangzhang,.wuxu,.piaoshui,.xuanze,.weishiyong,.ertong,.laoren,.jizhe,.canjiren,.lixi,.quanri,.yishang{
+  padding-bottom:5px;
+}
+.bencangping{
+  color:red;
+  padding-bottom:25px;
+}
+
+
+/* 支付金额 */
+.zhifujine{
+  background:#fff;
+  position:fixed;
+  bottom:0px;
+  width:100%;
+  
+}
+.zhifujin{
+  height:60px;
+  display:flex;
+  align-items: center;
+  padding-left:15px;
+}
+.qian{
+  flex:2.5;
+  /* background:red; */
+}
+/* .buttomtijiao{
+  height:80%;
+  flex:1;
+  background:green;
+  display:flex;
+  align-items: center;
+} */
+.zhifujin button{
+  flex:1;
+  height:60%;
+  font-size:16px;
+  background:rgba(209, 100, 9,0.8);
+  color:#fff;
+  margin-right:10px;
+}
+.youqianren{
+  font-size:14px;
+  color:red;
+  font-weight:600;
+}
+.wushiyuan{
+  font-size:24px;
+  color:red;
+}

@@ -1,0 +1,8 @@
+<!--pages/sou/sou.wxml-->
+<view class="image1" style="background-image: url('{{img[0]}}');">
+  <view class="image2" >
+    <text class="iconfont icon-kaixin-yuan hh"></text>
+    <input placeholder="搜索你喜欢的酒店"></input>
+    <text class="iconfont icon-fangdajing ss"></text>
+  </view>
+</view>

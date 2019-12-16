@@ -1,0 +1,65 @@
+<!--pages/gengduo/gengduo.wxml-->
+<!--logs.wxml-->
+  <navBar title='住宿列表' background='#000000' color='#fff' back="{{true}}" iconTheme='white' bindback="handlerGobackClick"></navBar>
+
+<view class="minsutupina">
+    <view class="mins">
+      <text class="min">民</text>
+      <text class="su">宿</text>
+    </view>
+
+
+  <view class="minsutupian1">
+    <view class="image1">       
+        <view class="imagea">
+          <image src="{{img[0]}}"></image>
+          <view class="yidong1">
+            <view class="yanyu1">丽水——堰遇民宿</view>
+          </view>
+        </view>
+        <view class="duoshaoqian1">
+          <view class="haoduoqian1">
+            <text class="iconfont icon-renminbi1688"></text>
+            <text class="qianqian1">580  </text>
+            <text class="qimeiwan1">起/每晚</text>
+          </view>
+        </view>
+      </view>
+
+
+      <view class="image1">
+        <view class="imagea">
+          <image src="{{img[1]}}"></image>
+          <view class="yidong1">
+            <view class="yanyu1">丽水——堰遇民宿</view>
+          </view>
+        </view>
+        <view class="duoshaoqian1">
+          <view class="haoduoqian1">
+            <text class="iconfont icon-renminbi1688"></text>
+            <text class="qianqian1">580  </text>
+            <text class="qimeiwan1">起/每晚</text>
+          </view>
+        </view>
+      </view>
+
+
+      <view class="image1">
+        <view class="imagea">
+          <image src="{{img[2]}}"></image>
+          <view class="yidong1">
+            <view class="yanyu1">丽水——堰遇民宿</view>
+          </view>
+        </view>
+        <view class="duoshaoqian1">
+          <view class="haoduoqian1">
+            <text class="iconfont icon-renminbi1688"></text>
+            <text class="qianqian1">580  </text>
+            <text class="qimeiwan1">起/每晚</text>
+          </view>
+        </view>
+      </view>
+
+  </view> 
+</view>
+

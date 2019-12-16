@@ -1,0 +1,47 @@
+view,
+text,
+scroll-view,
+input,
+button,
+image,
+cover-view {
+  box-sizing: border-box;
+}
+.lxy-nav-bar__inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5001;
+  height: var(--height);
+  display: flex;
+  align-items: center;
+  padding-right: var(--right);
+  width: 100%;
+  padding-bottom: var(--navBarExtendHeight);
+  background:url('https://wjh.augushong.com/huaxiang/daohanglan.png');
+}
+.lxy-nav-bar__button {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  font-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1em 2em;
+}
+.lxy-nav-bar__inner .lxy-nav-bar__center {
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  position: relative;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+.lxy-nav-bar__inner .lxy-nav-bar__left .lxy-nav-bar__btn_goback.white {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='24' viewBox='0 0 12 24'%3E  %3Cpath fill-opacity='.9' fill-rule='evenodd' d='M10 19.438L8.955 20.5l-7.666-7.79a1.02 1.02 0 0 1 0-1.42L8.955 3.5 10 4.563 2.682 12 10 19.438z' fill='%23ffffff'/%3E%3C/svg%3E");
+}

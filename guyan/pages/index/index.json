@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "古堰画乡",
+  "navigationStyle":"custom",
+  "usingComponents": {
+    "navBar": "/components/navBar/navBar"
+  }
+}
+
+

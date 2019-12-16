@@ -1,0 +1,205 @@
+/* pages/nongjiale2/nongjiale2.wxss */
+@import "../../css/iconfont.wxss";
+
+.sw{
+  width:100%;
+  height:200px;
+  /* background:red; */
+  text-align:center;
+}
+swiper-item image{
+  width:95%;
+  height:100%;
+  
+  border-radius:10px;
+}
+.swiperContainer {
+  position: relative;
+  margin-bottom:10px;
+}
+.swiperContainer .imagelunbo {
+  width: 15%;
+  background:rgba(66, 66, 65, 0.5);
+  border-radius: 20px;
+  text-align:center;
+  color: #fff;
+  position: absolute;
+  right: 26rpx;
+  bottom: 10rpx;
+  font-size:16px;
+}
+.biaoti {
+  color: #fff;
+  text-align: center;
+  font-size:16px;
+  position: absolute;
+  left: 26rpx;
+  bottom: 10rpx;
+}
+
+
+/* 定位标题 */
+.xingxing{
+  /* background:red; */
+  margin:0 auto;
+  width:95%;
+  
+}
+.xingxing1{
+  display:flex;
+  align-items:center;
+  /* background:lavender; */
+  height:25px;
+  font-size: 12px;
+  color:#fff;
+}
+.pin{
+  height:100%;
+  line-height: 25px;
+  background:rgb(0, 0, 0);
+  width:20%;
+  margin-right:5px;
+  text-align:center;
+  border-radius:5px;
+}
+.xing{
+  height:100%;
+  display:flex;
+  background:rgb(0, 0, 0);
+  width:30%;
+  justify-content:center;
+  align-items:center;
+  border-radius:5px;
+  color:rgb(248, 159, 42);
+}
+.icon-start{
+  font-size: 12px;
+  padding:0px 1px;
+}
+
+
+/* 联系方式 */
+.lianxifangshi{
+  width:100%;
+}
+.pinglunshuju{
+  padding-bottom:80px;
+}
+.lianxi{
+  display:flex;
+  color:rgb(58, 59, 59);
+  padding:15px 0px 10px 0px;
+}
+.dizhi{
+  flex:1;
+  /* background:red; */
+  font-size:14px;
+}
+.youjiantou{
+  font-size:14px;
+}
+.shouji{
+  display:flex;
+  color:rgb(58, 59, 59);
+}
+.shou{
+  flex:1;
+  /* background:red; */
+  font-size:14px;
+}
+.ji{
+  font-size:14px;
+}
+.jieshao{
+  text-indent:2em;
+  text-align:justify;
+  font-size:14px;
+  padding-top:10px;
+}
+.youke{
+  padding:15px 0px 10px 0px;
+}
+.hr1{
+  border-top:1px silver solid;
+  
+}
+.hr2{
+  border-bottom:1px silver solid;
+  /* padding-top:10px; */
+  /* padding-bottom:10px; */
+}
+.mei{
+  display:flex;
+  padding-top:10px;
+}
+.meimei{
+  flex:1;
+  
+}
+.shijian{
+  flex:1;
+  text-align:right;
+}
+.miaoshu{
+  padding:5px 0px 10px 5px;
+  /* background:red; */
+  font-size:14px;
+}
+.tijiao{
+  /* background:lavender; */
+  width:100%;
+  padding:5px 0px 5px 0px;
+  position:fixed;
+  bottom:0px;
+}
+.pinglun{
+  width:95%;
+  /* background:red; */
+  display:flex;
+  margin:0 auto;
+  height:40px;
+  /* align-items:center; */
+}
+.input1{
+  flex:6;
+  background:rgb(230, 230, 230);
+  height:100%;
+}
+.button1{
+  flex:1;
+  text-align:center;
+  height:100%;
+  line-height:40px;
+  background:rgb(141, 77, 24);
+}
+.zanwu{
+  /* background:red; */
+  text-align:center;
+  padding-top:20px;
+  font-size:14px;
+}
+
+
+
+/* 分享 */
+.fenxiang .share{
+  background:#fff;
+  margin:0px;
+  padding:0px;
+  position:fixed;
+  bottom:60px;
+  right:10px;
+  font-size:13px;
+  width:16%;
+  height:30px;
+  border:1px solid rgb(221, 221, 221);
+  border-radius:20px;
+  box-shadow: 1px 1px 5px #888888;
+}
+/* :after 选择器向选定的元素之后插入内容。 */
+.share::after{  
+  border:none;
+}
+/* .icon-share{
+  color:bisque;
+} */

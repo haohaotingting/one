@@ -1,0 +1,83 @@
+<!--pages/nongjiale2/nongjiale2.wxml-->
+<view class="xiangqing">
+  <!-- 轮播图 -->
+  <view class="swiperContainer">
+    <swiper bindchange="swiperChange" class="sw" autoplay="true" interval="6000" circular="true">
+      <block wx:for="{{img}}" wx:key="Date()">
+        <swiper-item>
+          <image src="{{item}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="imagelunbo">{{current+1}}/{{img.length}}</view>
+    <view class="biaoti">丽水诗画利山农家乐</view>
+  </view>
+  <view class="xingxing">
+    <view class="xingxing1">
+      <view class="pin">舒适*温馨</view>
+      <view class="xing">
+        <!-- <view class="xin"> -->
+          <view class="iconfont icon-start"></view>
+          <view class="iconfont icon-start"></view>
+          <view class="iconfont icon-start"></view>
+          <view class="iconfont icon-start"></view>
+          <view class="iconfont icon-start"></view>
+        <!-- </view> -->
+      </view>
+    </view>
+    <!-- 联系方式 -->
+    <view class="lianxifangshi">
+      <view class="lianxi" bindtap="weizhi">
+        <text class="iconfont icon-dibiao dizhi">  丽水市莲都区大港头镇利山村27号</text>
+        <text class="youjiantou">></text>
+      </view>
+
+      <view class="shouji" bindtap="dianhua">
+        <text class="iconfont icon-phone shou">  18957088809</text>
+        <text class="ji">></text>
+      </view>
+    </view>
+
+    <view class="jieshao">
+      <view class="jie">利山畲族村坐落于丽水莲都大港头镇，这是一片世外桃源式的农家乐景区。</view>
+      <view class="shao">利山依托悠久的畲族古村落，发掘古朴的畲乡风情，打造秀美的美丽乡村，成为红极浙江的新农村建设亮点，获得丽水市“兴林富民示范村”、“十佳危旧改造示范村”和首批丽水市“美丽乡村”示范村等荣誉称号。</view>
+    </view>
+      <!-- 游客评论 -->
+    <view class="youkepinglun">
+      <view class="youke">用户评论({{pingjia1.length}})</view>
+      <view class="hr1"></view>
+      <view class="pinglunshuju" wx:if="{{pingjia1.length!=0}}">
+        <block wx:for="{{pingjia1}}" wx:key="Date()">
+          
+            <view class="xiao">
+              <view class="mei">
+                <text class="meimei">{{item.kk}}</text>
+                <text class="shijian">{{item.s2}}</text>
+              </view>
+              <view class="miaoshu">{{item.ping}}</view>
+            </view>
+          <view class="hr2"></view>
+        </block>
+      </view>
+
+      <view class="pinglunshuju" wx:else>
+        <view class="zanwu">暂无数据</view>
+      </view>
+    </view>
+  </view>
+ <view class="fenxiang">
+    <button size="mini" class='iconfont icon-share share' open-type="share" hover-class="hover">分享</button>
+  </view>
+  <view class="tijiao">
+    <form bindsubmit="pingjia">
+      <view class="pinglun">
+        <!-- 只有设置了 name 属性的表单元素才能在提交表单时传递它们的值。 -->
+        <input placeholder="献上你宝贵的评价" class="input1" value="{{shuru}}" name='username'></input>
+        <!-- <input placeholder="献上你宝贵的评价" class="input1" bindblur="pingjia" value="{{shuru}}"></input> -->
+        <button formType="submit" class="button1">提交</button>
+        <!-- <view >提交</view> -->
+      
+      </view>
+    </form>
+  </view>
+</view>
